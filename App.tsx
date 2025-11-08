@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import OffersPage from './pages/OffersPage';
 import OfferDetailsPage from './pages/OfferDetailsPage';
@@ -57,9 +57,9 @@ function App() {
       <AuthProvider>
         <LanguageProvider>
           <ThemeProvider>
-            <HashRouter>
+            <BrowserRouter>
               <AppContent />
-            </HashRouter>
+            </BrowserRouter>
           </ThemeProvider>
         </LanguageProvider>
       </AuthProvider>
