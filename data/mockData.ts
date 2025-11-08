@@ -1,4 +1,4 @@
-import { User, UserType, Offer, OfferCategory, Booking, BookingStatus, PaymentStatus } from '../types';
+import { User, UserType, Offer, OfferCategory, Booking, BookingStatus, PaymentStatus, Inquiry } from '../types';
 
 // MOCK USERS
 export const MOCK_USERS: User[] = [
@@ -124,5 +124,42 @@ export const MOCK_BOOKINGS: Booking[] = [
     checkOutDate: '2024-08-23',
     nights: 3,
     roomType: MOCK_OFFERS[1].roomTypes![0]
+  },
+  {
+    id: 'b3',
+    offer: MOCK_OFFERS[0], // Djanet Trip from provider p1
+    userId: 'u2',
+    date: new Date().toISOString().split('T')[0],
+    status: 'pending',
+    paymentStatus: 'paid', // Paid, but pending confirmation. Refund if rejected.
+    companions: [{ name: 'Yacine Zohra' }],
+    totalPrice: 170000,
+  }
+];
+
+// MOCK INQUIRIES
+export const MOCK_INQUIRIES: Inquiry[] = [
+  {
+    id: 'inq1',
+    offerId: 'offer-1',
+    offerTitle: MOCK_OFFERS[0].title,
+    userId: 'u2',
+    userName: 'Fatima Zohra',
+    providerId: 'p1',
+    message: 'Hello, is it possible to have a vegetarian menu for the Djanet expedition? Thank you.',
+    createdAt: '2024-07-20T10:00:00Z',
+    isReadByProvider: false,
+  },
+  {
+    id: 'inq2',
+    offerId: 'offer-4',
+    offerTitle: MOCK_OFFERS[3].title,
+    userId: 'u1',
+    userName: 'Ahmed Benali',
+    providerId: 'p1',
+    message: 'Is the tour of Timgad accessible for people with reduced mobility?',
+    response: 'Hello Ahmed, the site has some difficult passages but we can adapt the tour. We will contact you to discuss the details.',
+    createdAt: '2024-07-19T15:30:00Z',
+    isReadByProvider: true,
   }
 ];

@@ -113,7 +113,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, offer }) =
         offer: offer,
         userId: user!.id,
         date: new Date().toISOString().split('T')[0],
-        status: 'upcoming' as BookingStatus,
+        status: 'pending' as BookingStatus,
         paymentStatus: 'paid' as PaymentStatus,
         companions,
         totalPrice,

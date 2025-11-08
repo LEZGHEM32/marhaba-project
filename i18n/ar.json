@@ -1,3 +1,4 @@
+
 {
   "home": "الرئيسية",
   "browseOffers": "تصفح العروض",
@@ -150,5 +151,26 @@
   "travelers": "المسافرون",
   "mainTraveler": "المسافر الرئيسي",
   "additionalTravelers": "المسافرون الإضافيون",
-  "ourPartners": "شركاؤنا ورعاتنا"
+  "ourPartners": "شركاؤنا ورعاتنا",
+  "bookingRequests": "طلبات الحجز",
+  "customerInquiries": "استفسارات العملاء",
+  "pending": "قيد الانتظار",
+  "upcoming": "قادم",
+  "completed": "مكتمل",
+  "cancelled": "ملغى",
+  "noBookingRequests": "ليس لديك أي طلبات حجز جديدة.",
+  "noInquiries": "ليس لديك أي استفسارات من العملاء.",
+  "askAQuestion": "اطرح سؤالاً",
+  "about": "بخصوص",
+  "yourQuestion": "سؤالك",
+  "typeYourQuestionHere": "اكتب سؤالك هنا...",
+  "send": "إرسال",
+  "from": "من",
+  "reply": "رد",
+  "yourReply": "ردك",
+  "typeYourReplyHere": "اكتب ردك هنا...",
+  "sendReply": "إرسال الرد",
+  "approve": "موافقة",
+  "reject": "رفض",
+  "confirmRejectBooking": "هل أنت متأكد من أنك تريد رفض هذا الحجز؟ سيتم رد المبلغ المدفوع للسائح."
 }

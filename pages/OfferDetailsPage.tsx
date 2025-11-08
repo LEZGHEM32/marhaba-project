@@ -7,12 +7,14 @@ import { CheckCircle, MapPin, Calendar, Clock, ShieldCheck } from 'lucide-react'
 import Map from '../components/Map';
 import BookingModal from '../components/BookingModal';
 import { useData } from '../contexts/DataContext';
+import InquiryModal from '../components/InquiryModal';
 
 const OfferDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { t, language, dir } = useLanguage();
   const { offers } = useData();
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const [isInquiryModalOpen, setIsInquiryModalOpen] = useState(false);
 
   const offer = offers.find(o => o.id === id);
 
@@ -118,6 +120,11 @@ const OfferDetailsPage: React.FC = () => {
                 <button onClick={() => setIsBookingModalOpen(true)} className="w-full mt-4 bg-sand hover:bg-clay text-white font-bold py-3 rounded-lg transition duration-300">
                   {t('bookNow')}
                 </button>
+                <div className="text-center mt-4">
+                    <button onClick={() => setIsInquiryModalOpen(true)} className="text-sm text-sand hover:underline">
+                        {t('askAQuestion')}
+                    </button>
+                </div>
               </div>
             </div>
           </div>
@@ -133,6 +140,11 @@ const OfferDetailsPage: React.FC = () => {
       <BookingModal 
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
+        offer={offer}
+      />
+      <InquiryModal
+        isOpen={isInquiryModalOpen}
+        onClose={() => setIsInquiryModalOpen(false)}
         offer={offer}
       />
     </>

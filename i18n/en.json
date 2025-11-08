@@ -1,3 +1,4 @@
+
 {
   "home": "Home",
   "browseOffers": "Browse Offers",
@@ -150,5 +151,26 @@
   "travelers": "Travelers",
   "mainTraveler": "Main Traveler",
   "additionalTravelers": "Additional Travelers",
-  "ourPartners": "Our Partners & Sponsors"
+  "ourPartners": "Our Partners & Sponsors",
+  "bookingRequests": "Booking Requests",
+  "customerInquiries": "Customer Inquiries",
+  "pending": "Pending",
+  "upcoming": "Upcoming",
+  "completed": "Completed",
+  "cancelled": "Cancelled",
+  "noBookingRequests": "You have no new booking requests.",
+  "noInquiries": "You have no customer inquiries.",
+  "askAQuestion": "Ask a question",
+  "about": "About",
+  "yourQuestion": "Your question",
+  "typeYourQuestionHere": "Type your question here...",
+  "send": "Send",
+  "from": "From",
+  "reply": "Reply",
+  "yourReply": "Your Reply",
+  "typeYourReplyHere": "Type your reply here...",
+  "sendReply": "Send Reply",
+  "approve": "Approve",
+  "reject": "Reject",
+  "confirmRejectBooking": "Are you sure you want to reject this booking? The tourist will be refunded."
 }

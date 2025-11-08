@@ -64,7 +64,7 @@ export interface Companion {
   name: string;
 }
 
-export type BookingStatus = 'upcoming' | 'completed' | 'cancelled';
+export type BookingStatus = 'pending' | 'upcoming' | 'completed' | 'cancelled';
 
 export type PaymentStatus = 'paid' | 'unpaid' | 'refunded';
 
@@ -81,4 +81,17 @@ export interface Booking {
   checkOutDate?: string;
   nights?: number;
   roomType?: RoomType;
+}
+
+export interface Inquiry {
+  id: string;
+  offerId: string;
+  offerTitle: LocalizedString;
+  userId: string;
+  userName: string;
+  providerId: string;
+  message: string;
+  response?: string;
+  createdAt: string; // ISO date string
+  isReadByProvider: boolean;
 }
